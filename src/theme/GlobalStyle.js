@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
   
   body {
     --bg: ${primaryDark};
@@ -46,9 +46,8 @@ const GlobalStyle = createGlobalStyle`
 
     color: var(--text);
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
-    transition: background-color 0.3s ease-in-out;
     font-size: 1.2rem;
 
     text-rendering: optimizeLegibility;
@@ -60,8 +59,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    font-family: sans-serif;
   }
 
   h1 {
@@ -74,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
     color: var(--primary);
   }
 
-  #niceToMeetYou{
+  #hello{
     color : ${orange};
   }
 
@@ -110,6 +108,362 @@ const GlobalStyle = createGlobalStyle`
   #resume{
     color : ${purple};
   }
+
+  #toolbox{
+    color : ${orange};
+  }
+
+  .c-toolbox-list {
+    list-style: none;
+    margin: 2em 0 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .c-toolbox-list__btn1 {
+    background: ${primaryDark};
+    border: 2px solid ${pink};
+    border-radius: .5em;
+    color: ${pink};
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    float: left;
+    margin: .4em .8em .4em 0;
+    padding: .8em 1.15em .75em;
+    position: relative;
+    transition: all .3s;
+  
+    &:hover {
+      background: ${pink};
+      color: ${primaryDark};
+    }
+  }　
+
+  .c-toolbox-list__btn--is-active1 {
+    background: ${pink};
+    border-radius: .5em;
+    color: ${primaryDark};
+    cursor: default;
+    z-index: 1;
+
+  }
+
+  .c-toolbox-popover1 {
+    background: ${primaryDark};
+    border: 2px solid ${pink};
+    color: ${pink}; 
+    margin: 1px, 0px;
+    max-width: 25em;
+    padding: .8em 1em .9em;
+    position: absolute;
+    transition: all .3s;
+    
+  }
+  
+  .c-toolbox-popover__text1 {
+    line-height: 1.4em;
+  
+    a {
+      background: ${secondaryDark};
+      border: none;
+      color: ${pink};
+      display: inline-block;
+      font-weight: bold;
+      padding: .05em .3em;
+  
+      &:hover {
+        background: darken(${primaryDark}, 20%);
+      }
+    }
+  }
+
+  .c-toolbox-list__btn2 {
+    background: ${primaryDark};
+    border: 2px solid ${green};
+    border-radius: .5em;
+    color: ${green};
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    float: left;
+    margin: .4em .8em .4em 0;
+    padding: .8em 1.15em .75em;
+    position: relative;
+    transition: all .3s;
+  
+    &:hover {
+      background: ${green};
+      color: ${primaryDark};
+    }
+  }　
+
+  
+  .c-toolbox-list__btn--is-active2 {
+    background: ${green};
+    border-radius: .5em;
+    color: ${primaryDark};
+    cursor: default;
+    z-index: 1;
+  }
+
+  .c-toolbox-popover2 {
+    background: ${primaryDark};
+    border: 2px solid ${green};
+    color: ${green}; 
+    margin: 1px, 0px;
+    max-width: 25em;
+    padding: .8em 1em .9em;
+    position: absolute;
+    transition: all .3s;
+    
+  }
+  
+  .c-toolbox-popover__text2 {
+    line-height: 1.4em;
+  
+    a {
+      background: ${secondaryDark};
+      border: none;
+      color: ${green};
+      display: inline-block;
+      font-weight: bold;
+      padding: .05em .3em;
+  
+      &:hover {
+        background: darken(${primaryDark}, 20%);
+      }
+    }
+  }
+
+  .c-toolbox-list__btn3 {
+    background: ${primaryDark};
+    border: 2px solid ${yellow};
+    border-radius: .5em;
+    color: ${yellow};
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    float: left;
+    margin: .4em .8em .4em 0;
+    padding: .8em 1.15em .75em;
+    position: relative;
+    transition: all .3s;
+  
+    &:hover {
+      background: ${yellow};
+      color: ${primaryDark};
+    }
+  }　
+
+  
+  .c-toolbox-list__btn--is-active3 {
+    background: ${yellow};
+    border-radius: .5em;
+    color: ${primaryDark};
+    cursor: default;
+    z-index: 1;
+
+  }
+
+  .c-toolbox-popover3 {
+    background: ${primaryDark};
+    border: 2px solid ${yellow};
+    color: ${yellow}; 
+    margin: 1px, 0px;
+    max-width: 25em;
+    padding: .8em 1em .9em;
+    position: absolute;
+    transition: all .3s;
+    
+  }
+  
+  .c-toolbox-popover__text3 {
+    line-height: 1.4em;
+  
+    a {
+      background: ${secondaryDark};
+      border: none;
+      color: ${yellow};
+      display: inline-block;
+      font-weight: bold;
+      padding: .05em .3em;
+  
+      &:hover {
+        background: darken(${primaryDark}, 20%);
+      }
+    }
+  }
+
+  .c-toolbox-list__btn4 {
+    background: ${primaryDark};
+    border: 2px solid ${blue};
+    border-radius: .5em;
+    color: ${blue};
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    float: left;
+    margin: .4em .8em .4em 0;
+    padding: .8em 1.15em .75em;
+    position: relative;
+    transition: all .3s;
+  
+    &:hover {
+      background: ${blue};
+      color: ${primaryDark};
+    }
+  }　
+
+  
+  .c-toolbox-list__btn--is-active4 {
+    background: ${blue};
+    border-radius: .5em;
+    color: ${primaryDark};
+    cursor: default;
+    z-index: 1;
+
+  }
+
+  .c-toolbox-popover4 {
+    background: ${primaryDark};
+    border: 2px solid ${blue};
+    color: ${blue}; 
+    margin: 1px, 0px;
+    max-width: 25em;
+    padding: .8em 1em .9em;
+    position: absolute;
+    transition: all .3s;
+    
+  }
+  
+  .c-toolbox-popover__text4 {
+    line-height: 1.4em;
+  
+    a {
+      background: ${secondaryDark};
+      border: none;
+      color: ${blue};
+      display: inline-block;
+      font-weight: bold;
+      padding: .05em .3em;
+  
+      &:hover {
+        background: darken(${primaryDark}, 20%);
+      }
+    }
+  }
+
+  .c-toolbox-list__btn0 {
+    background: ${primaryDark};
+    border: 2px solid ${purple};
+    border-radius: .5em;
+    color: ${purple};
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    float: left;
+    margin: .4em .8em .4em 0;
+    padding: .8em 1.15em .75em;
+    position: relative;
+    transition: all .3s;
+  
+    &:hover {
+      background: ${purple};
+      color: ${primaryDark};
+    }
+  }　
+
+  
+  .c-toolbox-list__btn--is-active0 {
+    background: ${purple};
+    border-radius: .5em;
+    color: ${primaryDark};
+    cursor: default;
+    z-index: 1;
+  }
+
+  .c-toolbox-popover0 {
+    background: ${primaryDark};
+    border: 2px solid ${purple};
+    color: ${purple}; 
+    margin: 1px, 0px;
+    max-width: 25em;
+    padding: .8em 1em .9em;
+    position: absolute;
+    transition: all .3s;
+    
+  }
+  
+  .c-toolbox-popover__text0 {
+    line-height: 1.4em;
+  
+    a {
+      background: ${secondaryDark};
+      border: none;
+      color: ${purple};
+      display: inline-block;
+      font-weight: bold;
+      padding: .05em .3em;
+  
+      &:hover {
+        background: darken(${primaryDark}, 20%);
+      }
+    }
+  }
+  
+  .c-toolbox-popover__description {
+    margin: 0;
+  }
+  
+  .c-toolbox-popover__footer {
+    margin-top: 1em;
+    line-height: 1.3em;
+    position: relative;
+  }
+  
+  .c-toolbox-popover__comment {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-left: 0px;
+    b {
+      font-weight: 800;
+    }
+  }
+  
+  .c-toolbox-popover__close {
+    background: none;
+    border: none;
+    color: ${pink};
+    cursor: pointer;
+    float: right;
+    padding: .5em;
+    margin: -.5em -.7em .2em .2em;
+  
+    &:hover {
+      color: darken(${pink}, 20%);
+    }
+  
+    svg {
+      font-size: 1.5em;
+      padding: 0;
+    }
+  } 
+
+@media screen and (min-width: $media-width-XL) {
+  .c-content-box {    
+    max-width: 46rem;
+    margin: 0 auto;
+  }   
+} 
+
+
 
 
 `
