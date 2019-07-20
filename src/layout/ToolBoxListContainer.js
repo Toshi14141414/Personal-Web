@@ -1,7 +1,6 @@
 import React from "react";
 import ToolBoxList from "../components/ToolBoxList";
 import ToolBoxPopOver from "../components/ToolBoxPopOver";
-import { Java } from "styled-icons/fa-brands";
 
 class ToolBoxListContainer extends React.Component {
   constructor(props) {
@@ -55,7 +54,7 @@ class ToolBoxListContainer extends React.Component {
         {
           id: 5,
           label: "HTML5",
-          description: `It's obvious. I don't think I need to explain anything more.`,
+          description: `It's a basic skill for web developer and I'm familiar with most of the tags, which gives me a great help when writing <a href="https://reactjs.org/docs/glossary.html#jsx" target="_blank">jsx</a> in React.`,
           comment: `Proficiency: ★★★★★`
         },
         {
@@ -119,13 +118,13 @@ class ToolBoxListContainer extends React.Component {
           id: 13,
           label: "Python",
           description: `<a href="https://www.python.org/" target="_blank">Python</a> is an interpreted, high-level, general-purpose programming language and it becomes more 
-          and more popular recent years. But I love Java.`,
+          and more popular recent years.`,
           comment: `Proficiency: ★★★☆☆`
         },
         {
           id: 14,
           label: "Vue",
-          description: `<a href="https://vuejs.org/index.html" target="_blank">Vue</a> is a JavaScript library by a Chinese, but I love React.`,
+          description: `<a href="https://vuejs.org/index.html" target="_blank">Vue</a> is a great JavaScript framework for building user interfaces and single-page applications.`,
           comment: `Proficiency: ★★★☆☆`
         },
         {
@@ -246,7 +245,7 @@ class ToolBoxListContainer extends React.Component {
   }
 
   windowKeyDownHandler(e) {
-    if (this.state.activatedItem && e.which == 27) {
+    if (this.state.activatedItem && e.which === 27) {
       this.deactivatePopOver();
     }
   }
@@ -285,7 +284,6 @@ class ToolBoxListContainer extends React.Component {
 
   positionPopOver(anchor, popOver) {
     const body = document.querySelector("body");
-    const toolbox = document.querySelector("#toolbox");
 
     const spaceUnder =
       body.offsetHeight - anchor.offsetTop - anchor.offsetHeight;

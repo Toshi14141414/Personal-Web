@@ -29,13 +29,13 @@ const IndexPage = ({
         <SuperText id="hello">Hello</SuperText>
         <div>
           <h1>My name is <span id="hanyuXu">Hanyu Xu</span>.</h1>
-          <p>A Master Student At {' '}
+          <p>A Master Student at {' '}
             <a href="https://www.nyu.edu/" id="university">New York University.</a>
           </p>
           <p>
             I'm a creative, ambitious and enterprising software engineer primarily focusing on web development.
             I love work with React, Node, Java and Python.
-            Also, I like Video Games, Manga, TV serious - Friends and The Cranberries.
+            Also, I like Video Games, Manga, TV series - Friends and The Cranberries.
         </p>
 
           <p id="job">Actively looking for Software Engineer Full-Time position.</p>

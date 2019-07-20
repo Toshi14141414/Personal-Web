@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { md } from 'styled-bootstrap-responsive-breakpoints'
 import { MenuAltRight } from 'styled-icons/boxicons-regular/MenuAltRight'
+import "../theme/Style/Navigation.scss";
 
 const MobileNavMenu = styled(MenuAltRight)`
   position: fixed;
@@ -80,8 +81,8 @@ const Navigation = () => {
       </h2>
 
       <h2>
-        <Link to='/experience' activeClassName='active' id = "experience">
-          experience
+        <Link to='/blog' activeClassName='active' id = "blog">
+          blog
         </Link>
       </h2>
 

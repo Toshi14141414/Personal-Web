@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const primaryDark = '#1a1d27'
 const secondaryDark = '#2d303d'
@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+  @import './Style/Navigator.scss';
   
   body {
     --bg: ${primaryDark};
@@ -97,17 +98,18 @@ const GlobalStyle = createGlobalStyle`
     color : ${green};
   }
 
-  #experience{
+  #blog{
     color : ${yellow};
   }
 
   #things{
     color : ${blue};
   }
-  
+
   #resume{
     color : ${purple};
   }
+ 
 
   #toolbox{
     color : ${orange};
@@ -168,10 +170,12 @@ const GlobalStyle = createGlobalStyle`
     a {
       background: ${secondaryDark};
       border: none;
+      text-decoration: underline;
       color: ${pink};
       display: inline-block;
       font-weight: bold;
       padding: .05em .3em;
+      
   
       &:hover {
         background: darken(${primaryDark}, 20%);
@@ -227,6 +231,7 @@ const GlobalStyle = createGlobalStyle`
     a {
       background: ${secondaryDark};
       border: none;
+      text-decoration: underline;
       color: ${green};
       display: inline-block;
       font-weight: bold;
@@ -287,6 +292,7 @@ const GlobalStyle = createGlobalStyle`
     a {
       background: ${secondaryDark};
       border: none;
+      text-decoration: underline;
       color: ${yellow};
       display: inline-block;
       font-weight: bold;
@@ -347,6 +353,7 @@ const GlobalStyle = createGlobalStyle`
     a {
       background: ${secondaryDark};
       border: none;
+      text-decoration: underline;
       color: ${blue};
       display: inline-block;
       font-weight: bold;
@@ -406,6 +413,7 @@ const GlobalStyle = createGlobalStyle`
     a {
       background: ${secondaryDark};
       border: none;
+      text-decoration: underline;
       color: ${purple};
       display: inline-block;
       font-weight: bold;

@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import noflash from './noflash'
+import React from 'react';
+import PropTypes from 'prop-types';
+import noflash from './noflash';
 
 export default function HTML (props) {
   return (
