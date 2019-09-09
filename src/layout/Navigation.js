@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { md } from 'styled-bootstrap-responsive-breakpoints'
 import { MenuAltRight } from 'styled-icons/boxicons-regular/MenuAltRight'
-import "../theme/Style/Navigation.scss";
 
 const MobileNavMenu = styled(MenuAltRight)`
   position: fixed;

@@ -20,7 +20,7 @@ const ResumePage = () => {
       <SEO title='FOUR OH FOUR!' />
       <Center>
         <SuperText size='3em'>FourOhFour</SuperText>
-        <p>This doesn't seem to be a page.</p>
+        <p>Still working on this page. Coming Soon.</p>
         <Link to='/'>Go Home</Link>
       </Center>
     </Layout>
