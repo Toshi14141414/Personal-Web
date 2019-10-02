@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import Layout from '../layout/layout'
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import Layout from "../layout/layout";
 
-import Container from '../layout/Container'
-import SuperText from '../components/SuperText'
-import SEO from '../components/SEO'
-import ToolBoxListContainer from '../layout/ToolBoxListContainer'
+import Container from "../layout/Container";
+import SuperText from "../components/SuperText";
+import SEO from "../components/SEO";
+import ToolBoxListContainer from "../layout/ToolBoxListContainer";
 
 const RecentPostsContainer = styled.div`
   padding-top: 20vh;
@@ -16,47 +16,54 @@ const RecentPostsContainer = styled.div`
     font-size: 2em;
     color: var(--text);
   }
-`
+`;
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges }
   }
 }) => (
-    <Layout>
-      <Container>
-        <SEO title="Hanyu Xu" />
-        <SuperText id="hello">Hello</SuperText>
-        <div>
-          <h1>My name is <span id="hanyuXu">Hanyu Xu</span>.</h1>
-          <p>A Master Student at {' '}
-            <a href="https://www.nyu.edu/" id="university">New York University.</a>
-          </p>
-          <p>
-            I'm a creative, ambitious and enterprising software engineer primarily focusing on web development.
-            I love work with React, Node, Java and Python.
-            Also, I like Video Games, Manga, TV series - Friends and The Cranberries.
+  <Layout>
+    <Container>
+      <SEO title="Hanyu Xu" />
+      <SuperText id="hello">Hello</SuperText>
+      <div>
+        <h1>
+          My name is <span id="hanyuXu">Hanyu Xu</span>.
+        </h1>
+        <p>
+          A Master Student at{" "}
+          <a href="https://www.nyu.edu/" id="university">
+            New York University.
+          </a>
+        </p>
+        <p>
+          I'm a creative, ambitious and enterprising software engineer primarily
+          focusing on web development. I love work with React, Node, Java and
+          Python. Also, I like Video Games, Manga, TV series - Friends and The
+          Cranberries.
         </p>
 
-          <p id="job">Actively looking for Software Engineer Full-Time position.</p>
- 
-            <RecentPostsContainer>
-              <SuperText id="toolbox">Toolbox</SuperText>
-              <ToolBoxListContainer id="toolboxContainer" />
-            </RecentPostsContainer>
-          
-        </div>
-      </Container>
-    </Layout>
-  )
+        <p id="job">
+          Actively looking for Software Engineer Full-Time position.
+        </p>
 
-export default IndexPage
+        <RecentPostsContainer>
+          <SuperText id="toolbox">Toolbox</SuperText>
+          <ToolBoxListContainer id="toolboxContainer" />
+        </RecentPostsContainer>
+      </div>
+    </Container>
+  </Layout>
+);
+
+export default IndexPage;
 
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
       limit: 3
-      filter:{fileAbsolutePath: {regex: ""}}, 
+      filter: { fileAbsolutePath: { regex: "" } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
@@ -72,4 +79,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

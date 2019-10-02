@@ -34,7 +34,7 @@
 // export const pageQuery = graphql`
 //   {
 //     allMarkdownRemark(
-//       filter:{fileAbsolutePath: {regex: ""}}, 
+//       filter:{fileAbsolutePath: {regex: ""}},
 //       sort: { fields: frontmatter___date, order: DESC }) {
 //       edges {
 //         node {
@@ -51,16 +51,13 @@
 //   }
 // `
 
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import Layout from "../layout/layout";
 
-
-
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import Layout from '../layout/layout'
-
-import SEO from '../components/SEO'
-import SuperText from '../components/SuperText'
+import SEO from "../components/SEO";
+import SuperText from "../components/SuperText";
 
 const Center = styled.div`
   height: 80vh;
@@ -68,19 +65,19 @@ const Center = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`
+`;
 
 const ProjectPage = () => {
   return (
     <Layout>
-      <SEO title='FOUR OH FOUR!' />
+      <SEO title="FOUR OH FOUR!" />
       <Center>
-        <SuperText size='3em'>FourOhFour</SuperText>
+        <SuperText size="3em">FourOhFour</SuperText>
         <p>Still working on this page. Coming Soon.</p>
-        <Link to='/'>Go Home</Link>
+        <Link to="/">Go Home</Link>
       </Center>
     </Layout>
-  )
-}
+  );
+};
 
-export default ProjectPage
+export default ProjectPage;

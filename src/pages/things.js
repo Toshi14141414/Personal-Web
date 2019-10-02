@@ -33,11 +33,6 @@
 //   return (
 //     <Layout>
 //       <Container>
-//         <SEO
-//           title='Portfolio - Matthew Secrist'
-//           description='Projects and Images.'
-//           pathname='/portfolio'
-//         />
 //         <SuperText>Experience</SuperText>
 //         <GridWrapper>
 //           {projects.map(({ node: { id, frontmatter } }) => (
@@ -77,15 +72,13 @@
 //   }
 // `
 
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import Layout from "../layout/layout";
 
-
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import Layout from '../layout/layout'
-
-import SEO from '../components/SEO'
-import SuperText from '../components/SuperText'
+import SEO from "../components/SEO";
+import SuperText from "../components/SuperText";
 
 const Center = styled.div`
   height: 80vh;
@@ -93,19 +86,19 @@ const Center = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`
+`;
 
 const ThingsPage = () => {
   return (
     <Layout>
-      <SEO title='FOUR OH FOUR!' />
+      <SEO title="FOUR OH FOUR!" />
       <Center>
-        <SuperText size='3em'>FourOhFour</SuperText>
+        <SuperText size="3em">FourOhFour</SuperText>
         <p>Still working on this page. Coming Soon.</p>
-        <Link to='/'>Go Home</Link>
+        <Link to="/">Go Home</Link>
       </Center>
     </Layout>
-  )
-}
+  );
+};
 
-export default ThingsPage
+export default ThingsPage;
