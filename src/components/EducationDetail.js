@@ -30,7 +30,7 @@ const style = {
     marginTop: "0rem",
     marginBottom: "0rem",
     paddingBottom: "0.5rem",
-    fontWeight: "bold"
+    fontWeight: "normal"
   }
 };
 

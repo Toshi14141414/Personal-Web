@@ -27,7 +27,7 @@ const Data = {
     {
       title: `<a href="https://www.joatspace.com/" target="_blank">JOATSPACE</a>`,
       position: `Software Engineer Intern`,
-      time: "June 2019 - Present",
+      time: "May 2019 - Present",
       details: [
         `&bull; &nbsp;Worked as a part-time full-stack developer to implement a web dashboard application for admins to manage
       hundreds of service requests and user applications per day using <a>Node</a>, <a>React</a>, <a>Redux</a>, <a>Firebase</a> and <a>GCP</a>.`,
@@ -39,7 +39,7 @@ const Data = {
     {
       title: `<a href="https://www.allocaterite.com/" target="_blank">AllocateRite LLC</a>`,
       position: `Software Engineer Intern`,
-      time: "July 2017 - May 2018",
+      time: "June 2019 - August 2019",
       details: [
         `&bull; &nbsp;Upgraded the official marketing website with thousands of daily visits using <a>Node</a>, <a>React</a>, <a>Redux</a> and <a>SCSS/SASS</a>
         deployed to <a>Amazon Web Service</a>`,
@@ -52,7 +52,7 @@ const Data = {
     {
       title: `<a href="http://new.oversea.cnki.net/index/" target="_blank">CNKI.com, China Academic Journal Publishing House</a>`,
       position: `Product Manager`,
-      time: "June 2019 - August 2019",
+      time: "July 2017 - May 2018",
       details: [
         `&bull; &nbsp;Upgraded the General Library of Insurance Industry Knowledge Resources Database to the version 2.3 and improved the user experience.`,
         `&bull; &nbsp;Set up an information sharing platform to integrate resources from journals and Internet.`,
@@ -61,8 +61,8 @@ const Data = {
     },
     {
       title: `<a href="http://new.oversea.cnki.net/index/" target="_blank">CNKI.com, China Academic Journal Publishing House</a>`,
-      position: `Associate Product Manager`,
-      time: "June 2019 - August 2019",
+      position: `Associate Product Manager Intern`,
+      time: "July 2016 - July 2017",
       details: [
         `&bull; &nbsp;Participated in designing a big data search platform for People Opinion Data.`,
         `&bull; &nbsp;Designed a WeChat Mini Application for advertising and programmed the background operation code.`
@@ -176,7 +176,7 @@ const style = {
     fontWeight: "bold"
   },
   text: {
-    fontWeight: "bold"
+    fontWeight: "normal"
   }
 };
 
