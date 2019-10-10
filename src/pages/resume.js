@@ -5,7 +5,6 @@ import Layout from "../layout/layout";
 import ResumeDetail from "../components/ResumeDetail";
 import SuperText from "../components/SuperText";
 import EducationDetail from "../components/EducationDetail";
-import { Project } from "styled-icons/octicons";
 import ProjectDetail from "../components/ProjectDetail";
 
 const Center = styled.div`
