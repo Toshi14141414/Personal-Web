@@ -8,7 +8,7 @@ import SuperText from "../components/SuperText";
 import SEO from "../components/SEO";
 import ToolBoxListContainer from "../layout/ToolBoxListContainer";
 
-const RecentPostsContainer = styled.div`
+const ToolBoxContainer = styled.div`
   padding-top: 20vh;
   text-align: left;
 
@@ -32,26 +32,42 @@ const IndexPage = ({
           My name is <span id="hanyuXu">Hanyu Xu</span>.
         </h1>
         <p>
-          A Master Student at{" "}
+          I’m currently pursing my Master’s degree in Computer Engineering at{" "}
           <a href="https://www.nyu.edu/" id="university">
-            New York University.
+            New York University
           </a>
+          .
         </p>
         <p>
-          I'm a creative, ambitious and enterprising software engineer primarily
-          focusing on web development. I love work with React, Node, Java and
-          Python. Also, I like Video Games, Manga, TV series - Friends and The
-          Cranberries.
+          As a creative, ambitious, and promising software engineer who
+          primarily works on Web Development, I am pretty decent at using{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>React</span>,{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>Node</span>,{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>Java</span> and{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>Python</span>.
+          I’m kinda like a{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>
+            “work hard play hard”
+          </span>{" "}
+          type of person. I enjoy video games and jam rock music. If you happen
+          to like watching{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>Friends</span>{" "}
+          or listening to{" "}
+          <span style={{ color: "#fada5d", fontWeight: "bold" }}>
+            The Cranberries
+          </span>{" "}
+          , we could probably get along quite well and talk all day long.
         </p>
 
         <p id="job">
-          Actively looking for Software Engineer Full-Time position.
+          Actively looking for software engineer full-time jobs. But open to
+          other similar positions as well.
         </p>
 
-        <RecentPostsContainer>
+        <ToolBoxContainer>
           <SuperText id="toolbox">Toolbox</SuperText>
           <ToolBoxListContainer id="toolboxContainer" />
-        </RecentPostsContainer>
+        </ToolBoxContainer>
       </div>
     </Container>
   </Layout>
