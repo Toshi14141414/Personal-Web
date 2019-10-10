@@ -5,6 +5,8 @@ import Layout from "../layout/layout";
 import ResumeDetail from "../components/ResumeDetail";
 import SuperText from "../components/SuperText";
 import EducationDetail from "../components/EducationDetail";
+import { Project } from "styled-icons/octicons";
+import ProjectDetail from "../components/ProjectDetail";
 
 const Center = styled.div`
   height: 80vh;
@@ -71,19 +73,41 @@ const Data = {
   education: [
     {
       school: `<a href="https://www.nyu.edu/" target="_blank">New York University</a>`,
-      degree: `Master of Science in Computer Engineering, Spec. in Software Engineering`,
-      courses: `Computer System Architecture, Data Structure, Internet Architecture and Protocol, Principles of Database, Java`
+      degree: `&bull; Master of Science in Computer Engineering, Spec. in Software Engineering`,
+      courses: `&bull; Notable Courses: Computer System Architecture, Data Structure, Internet Architecture and Protocol, Principles of Database, Java`
     },
     {
       school: `<a href="https://www.bupt.edu.cn/" target="_blank">Beijing University of Posts and Telecommunications</a>`,
-      degree: `Bachelor of Engineering in Electronic Information Science and Technology`,
-      courses: `Top 10 students scholarship in 2014, 2015, 2016`
+      degree: `&bull; Bachelor of Engineering in Electronic Information Science and Technology`,
+      courses: `&bull; Notable Prices: Top 10 students scholarship in 2014, 2015, 2016`
     }
   ],
-  Projects: [
+  projects: [
     {
-      name: ``,
-      details: [``]
+      name: `SPARK Prediction: improve event search and recommendation based on visit history `,
+      details: [
+        `&bull; Developed an interactive web page with HTML/JavaScript for user to search events, update preference and view
+      recommended events.`,
+        `&bull; Proposed a web service using Java Servlet and REST API to fetch event data from TicketMaster API.`,
+        `&bull; Utilized MongoDB to store user preference and event information and improved precision of recommendation by
+      matching similar events based on categories.`,
+        `&bull; Tested the web service and app with unit tests/Junit and load tests/JMeter.`
+      ]
+    },
+    {
+      name: `Notera: Mark and Recommend Database Project`,
+      details: [
+        `&bull; A web app where user can upload their notes with markdown format, mark as favorite and share to friends.`,
+        `&bull; Implemented a web app with React, Redux for front-end, MySQL for Database as well as JavaScript for backend
+    service functions.`
+      ]
+    },
+    {
+      name: `Personal Website`,
+      details: [
+        `&bull; My website that details my projects, experience, personal blog and my favorite things.`,
+        `&bull; Used markdown docs as data source, fetched by GraphQL and built by Gatsby. Built the front-end by React and SCSS/SASS and deployed to GCP Cloud Storage.`
+      ]
     }
   ]
 };
@@ -92,7 +116,7 @@ const ResumePage = () => {
   return (
     <Layout>
       <Link to="/">Back to About Me</Link>
-      <SuperText size="2em" style={style.titlecolor}>
+      <SuperText size="2em" style={style.titleColor}>
         Resume
       </SuperText>
       <p>Hanyu Xu</p>
@@ -117,14 +141,20 @@ const ResumePage = () => {
       ))}
 
       <p>Projects</p>
+      {Data.projects.map(project => (
+        <ProjectDetail value={project} />
+      ))}
     </Layout>
   );
 };
 
 const style = {
-  titlecolor: {
+  titleColor: {
     color: "#ffbd50",
     paddingTop: "3rem"
+  },
+  name: {
+    color: "#"
   }
 };
 
