@@ -18,11 +18,11 @@ const Center = styled.div`
 
 const Data = {
   skills: [
-    `&bull; Languages: Java, JavaScript/TypeScript, Python, C++, C, Swift`,
-    `&bull; Web Development: Node, React, Redux, Gatsby, GraphQL, Vue, Django`,
-    `&bull; Database: SQL, MongoDB, Firebase`,
-    `&bull; Mobile App Development: React Native(Cocoapods, Expo), Swift`,
-    `&bull; Others: Git, Google Cloud Platform, Amazon Web Service, Docker, UX/UI Design`
+    `&bull;  &nbsp;<a>Languages:</a> Java, JavaScript/TypeScript, Python, C++, C, Swift`,
+    `&bull;  &nbsp;<a>Web Development:</a> Node, React, Redux, Gatsby, GraphQL, Vue, Django`,
+    `&bull;  &nbsp;<a>Database:</a> SQL, MongoDB, Firebase`,
+    `&bull;  &nbsp;<a>Mobile App Development:</a> React Native(Cocoapods, Expo), Swift`,
+    `&bull;  &nbsp;<a>Others:</a> Git, Google Cloud Platform, Amazon Web Service, Docker, UX/UI Design`
   ],
   experiences: [
     {
@@ -30,11 +30,11 @@ const Data = {
       position: `Software Engineer Intern`,
       time: "June 2019 - Present",
       details: [
-        `&bull; Worked as a part-time full-stack developer to implement a web dashboard application for admins to manage
-      hundreds of service requests and user applications per day using <a>Node</a>, <a>React</a>, Redux, Firebase and GCP.`,
-        `&bull; Designed and Developed automatic email service function with Typescript and SendGrid which processed 100+
+        `&bull; &nbsp;Worked as a part-time full-stack developer to implement a web dashboard application for admins to manage
+      hundreds of service requests and user applications per day using <a>Node</a>, <a>React</a>, <a>Redux</a>, <a>Firebase</a> and <a>GCP</a>.`,
+        `&bull; &nbsp;Designed and Developed automatic email service function with <a>Typescript</a> and <a>SendGrid</a> which processed 100+
       email requests from users each day.`,
-        `&bull; Integrated messaging service in GraphQL and WebSockets to enable real-time communication between 500+ users.`
+        `&bull; &nbsp;Integrated messaging service in <a>GraphQL</a> and <a>WebSockets</a> to enable real-time communication between 500+ users.`
       ]
     },
     {
@@ -42,11 +42,11 @@ const Data = {
       position: `Software Engineer Intern`,
       time: "July 2017 - May 2018",
       details: [
-        `&bull; Upgraded the official marketing website with thousands of daily visits using Node, React, Redux and SCSS/SASS and
-        deployed to AWS`,
-        `&bull; Built a mobile app with Node, React Native, Expo, CocoaPods and other JS libraries like Plaid which provides
+        `&bull; &nbsp;Upgraded the official marketing website with thousands of daily visits using <a>Node</a>, <a>React</a>, <a>Redux</a> and <a>SCSS/SASS</a>
+        deployed to <a>Amazon Web Service</a>`,
+        `&bull; &nbsp;Built a mobile app with <a>Node</a>, <a>React Native</a>, <a>Expo</a>, <a>CocoaPods</a> and other JS libraries like <a>Plaid</a> which provides
         investment strategies and controls users’ bank account to invest according to the strategy.`,
-        `&bull; Developed many asynchronous backend functions in JavaScript for mobile app which reduced service application
+        `&bull; &nbsp;Developed many asynchronous backend functions in <a>JavaScript</a> for mobile app which reduced service application
         loading time by around 50%.`
       ]
     },
@@ -55,9 +55,9 @@ const Data = {
       position: `Product Manager`,
       time: "June 2019 - August 2019",
       details: [
-        `&bull; Upgraded the General Library of Insurance Industry Knowledge Resources Database to the version 2.3 and improved the user experience.`,
-        `&bull; Set up an information sharing platform to integrate resources from journals and Internet.`,
-        `&bull; Formed an academic exchange center based on the platform for an insurance association.`
+        `&bull; &nbsp;Upgraded the General Library of Insurance Industry Knowledge Resources Database to the version 2.3 and improved the user experience.`,
+        `&bull; &nbsp;Set up an information sharing platform to integrate resources from journals and Internet.`,
+        `&bull; &nbsp;Formed an academic exchange center based on the platform for an insurance association.`
       ]
     },
     {
@@ -65,48 +65,48 @@ const Data = {
       position: `Associate Product Manager`,
       time: "June 2019 - August 2019",
       details: [
-        `&bull; Participated in designing a big data search platform for People Opinion Data.`,
-        `&bull; Designed a WeChat Mini Application for advertising and programmed the background operation code.`
+        `&bull; &nbsp;Participated in designing a big data search platform for People Opinion Data.`,
+        `&bull; &nbsp;Designed a WeChat Mini Application for advertising and programmed the background operation code.`
       ]
     }
   ],
   education: [
     {
       school: `<a href="https://www.nyu.edu/" target="_blank">New York University</a>`,
-      degree: `&bull; Master of Science in Computer Engineering, Spec. in Software Engineering`,
-      courses: `&bull; Notable Courses: Computer System Architecture, Data Structure, Internet Architecture and Protocol, Principles of Database, Java`
+      degree: `&bull; &nbsp;<a>Master of Science in Computer Engineering</a>, Spec. in Software Engineering`,
+      courses: `&bull; &nbsp;<a>Notable Courses</a>: Computer System Architecture, Data Structure, Internet Architecture and Protocol, Principles of Database, Java`
     },
     {
       school: `<a href="https://www.bupt.edu.cn/" target="_blank">Beijing University of Posts and Telecommunications</a>`,
-      degree: `&bull; Bachelor of Engineering in Electronic Information Science and Technology`,
-      courses: `&bull; Notable Prices: Top 10 students scholarship in 2014, 2015, 2016`
+      degree: `&bull; &nbsp;<a>Bachelor of Engineering in Electronic Information Science and Technology</a>`,
+      courses: `&bull; &nbsp;<a>Notable Prices:</a> Top 10 students scholarship in 2014, 2015, 2016`
     }
   ],
   projects: [
     {
       name: `SPARK Prediction: improve event search and recommendation based on visit history `,
       details: [
-        `&bull; Developed an interactive web page with HTML/JavaScript for user to search events, update preference and view
+        `&bull; &nbsp;Developed an interactive web page with <a>HTML/JavaScript</a> for user to search events, update preference and view
       recommended events.`,
-        `&bull; Proposed a web service using Java Servlet and REST API to fetch event data from TicketMaster API.`,
-        `&bull; Utilized MongoDB to store user preference and event information and improved precision of recommendation by
+        `&bull; &nbsp;Proposed a web service using <a>Java Servlet</a> and <A>REST API</a> to fetch event data from TicketMaster API.`,
+        `&bull; &nbsp;Utilized <a>MongoDB</a> to store user preference and event information and improved precision of recommendation by
       matching similar events based on categories.`,
-        `&bull; Tested the web service and app with unit tests/Junit and load tests/JMeter.`
+        `&bull; &nbsp;Tested the web service and app with <a>unit tests/Junit</a> and load tests/JMeter.`
       ]
     },
     {
       name: `Notera: Mark and Recommend Database Project`,
       details: [
-        `&bull; A web app where user can upload their notes with markdown format, mark as favorite and share to friends.`,
-        `&bull; Implemented a web app with React, Redux for front-end, MySQL for Database as well as JavaScript for backend
+        `&bull; &nbsp;A web app where user can upload their notes with markdown format, mark as favorite and share to friends.`,
+        `&bull; &nbsp;Implemented a web app with <a>React</a>, <a>Redux</a> for front-end, <a>MySQL</a> for Database as well as <a>JavaScript</a> for backend
     service functions.`
       ]
     },
     {
       name: `Personal Website`,
       details: [
-        `&bull; My website that details my projects, experience, personal blog and my favorite things.`,
-        `&bull; Used markdown docs as data source, fetched by GraphQL and built by Gatsby. Built the front-end by React and SCSS/SASS and deployed to GCP Cloud Storage.`
+        `&bull; &nbsp;My website that details my projects, experience, personal blog and my favorite things.`,
+        `&bull; &nbsp;Used markdown docs as data source, fetched by <a>GraphQL</a> and built by <a>Gatsby</a>. Built the front-end by <a>React</a> and <a>SCSS/SASS</a> and deployed to <a>Google Cloud Platform</a>.`
       ]
     }
   ]
@@ -119,28 +119,31 @@ const ResumePage = () => {
       <SuperText size="2em" style={style.titleColor}>
         Resume
       </SuperText>
-      <p>Hanyu Xu</p>
-      <p>me@xuhanyu.com</p>
+      <p style={style.name}>Hanyu Xu</p>
+      <p style={style.email}>me@xuhanyu.com</p>
 
-      <p>Skills</p>
-
+      <p style={style.subtitle}>Skills</p>
       <ul>
         {Data.skills.map(skill => (
-          <p dangerouslySetInnerHTML={{ __html: skill }} />
+          <p
+            className="skill-detail"
+            style={style.text}
+            dangerouslySetInnerHTML={{ __html: skill }}
+          />
         ))}
       </ul>
 
-      <p>Education</p>
+      <p style={style.subtitle}>Education</p>
       {Data.education.map(edu => (
         <EducationDetail value={edu} />
       ))}
 
-      <p>Experinece</p>
+      <p style={style.subtitle}>Experinece</p>
       {Data.experiences.map(experience => (
         <ResumeDetail value={experience} />
       ))}
 
-      <p>Projects</p>
+      <p style={style.subtitle}>Projects</p>
       {Data.projects.map(project => (
         <ProjectDetail value={project} />
       ))}
@@ -154,7 +157,27 @@ const style = {
     paddingTop: "3rem"
   },
   name: {
-    color: "#"
+    color: "#f29c9f",
+    fontSize: "3rem",
+    fontWeight: "bold",
+    marginTop: "0rem",
+    marginBottom: "0rem"
+  },
+  email: {
+    color: "#83c192",
+    fontWeight: "bold",
+    marginTop: "0.5rem",
+    marginBottom: "0rem"
+  },
+  subtitle: {
+    color: "#af98e6",
+    paddingTop: "1rem",
+    marginBottom: "0rem",
+    fontSize: "1.8rem",
+    fontWeight: "bold"
+  },
+  text: {
+    fontWeight: "bold"
   }
 };
 

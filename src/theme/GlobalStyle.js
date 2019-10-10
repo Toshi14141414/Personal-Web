@@ -1,18 +1,18 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-const primaryDark = '#1a1d27'
-const secondaryDark = '#2d303d'
+const primaryDark = "#1a1d27";
+const secondaryDark = "#2d303d";
 
-const white = '#eae9e1'
-const purple = '#af98e6'
-const blue = '#51c7da'
-const yellow = '#fada5d'
-const green = '#83c192'
-const pink = '#f29c9f'
-const orange = '#ffbd50'
+const white = "#eae9e1";
+const purple = "#af98e6";
+const blue = "#51c7da";
+const yellow = "#fada5d";
+const green = "#83c192";
+const pink = "#f29c9f";
+const orange = "#ffbd50";
 
-const black = '#1a1d27'
-const lightWhite = '#FFFFFF'
+const black = "#1a1d27";
+const lightWhite = "#FFFFFF";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -471,9 +471,19 @@ const GlobalStyle = createGlobalStyle`
   }   
 } 
 
+.skill-detail a{
+  color: #51c7da;
+}
 
+.resume-detail-subtitle a{
+  color: #83c192;
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
 
+.resume-text-detail a{
+  color: #fada5d;
+}
+`;
 
-`
-
-export default GlobalStyle
+export default GlobalStyle;

@@ -1,29 +1,46 @@
 import React, { Component } from "react";
-import { Container, Col, Row } from "react-bootstrap";
 
 export class ResumeDetail extends Component {
   render() {
     return (
-      <Container>
-        <Row>
-          <p dangerouslySetInnerHTML={{ __html: this.props.value.title }} />
-        </Row>
-        <Row>
-          <Col sm={12} md={6}>
-            <p>{this.props.value.position}</p>
-          </Col>
-          <Col sm={12} md={6}>
-            <p>{this.props.value.time}</p>
-          </Col>
-        </Row>
+      <div>
+        <p
+          className="resume-detail-subtitle"
+          dangerouslySetInnerHTML={{ __html: this.props.value.title }}
+        />
+
+        <p style={style.positionTime}>{this.props.value.position}</p>
+
+        <p style={style.positionTime}>{this.props.value.time}</p>
+
         <ul>
           {this.props.value.details.map(detail => (
-            <p dangerouslySetInnerHTML={{ __html: detail }} />
+            <p
+              className="resume-text-detail"
+              style={style.text}
+              dangerouslySetInnerHTML={{ __html: detail }}
+            />
           ))}
         </ul>
-      </Container>
+      </div>
     );
   }
 }
+
+const style = {
+  positionTime: {
+    color: "#51c7da",
+    marginTop: "0rem",
+    marginBottom: "0rem",
+    paddingBottom: "0.5rem",
+    fontWeight: "bold"
+  },
+  text: {
+    marginTop: "0rem",
+    marginBottom: "0rem",
+    paddingBottom: "0.5rem",
+    fontWeight: "bold"
+  }
+};
 
 export default ResumeDetail;
